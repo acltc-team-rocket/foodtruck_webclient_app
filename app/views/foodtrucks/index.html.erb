@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>Business</th>
+    <th>Description</th>
+  </tr>
+  <% @foodtrucks.each do |foodtruck| %>
+  <tr>
+    <td><%= foodtruck["applicant"] %></td>
+    <td><%= foodtruck["optionaltext"] %></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>
